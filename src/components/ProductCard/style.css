@@ -1,0 +1,18 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem;
+  }
+  
+  .product-card-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card-2 {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+  }
+  
