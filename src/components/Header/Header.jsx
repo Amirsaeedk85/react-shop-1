@@ -1,11 +1,11 @@
 import React from "react";
 import './style.css';
 
-function Header() {
+function Header(props) {
   return (
     <div>
       <header>
-        <p>React shopping cart</p>
+        <p>{props.title}</p>
       </header>
     </div>
   );

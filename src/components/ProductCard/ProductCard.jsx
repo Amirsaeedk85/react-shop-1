@@ -1,21 +1,18 @@
 import React from "react";
-import './style.css';
+import "./style.css";
 
-function ProductCard() {
+function ProductCard({imgsrc = "", title = "", price = 0,buttonTitle='Add to Cart',onClick}) {
   return (
     <div>
       <div className="product-card">
         <div className="product-card-1">
-          <img
-            src="https://react-shopping-cart-seven-lovat.vercel.app/images/dress1.jpg"
-            alt="Midi sundress with shirring detail"
-          />
-          <p>Midi sundress with shirring detail</p>
+          <img src={imgsrc} alt="product_image" />
+          <p>{title}</p>
         </div>
         <div className="product-card-2">
-          <div>$29.5</div>
+          <div>${price}</div>
           <div>
-            <button>Add to card</button>
+            <button onClick={onClick}>{buttonTitle}</button>
           </div>
         </div>
       </div>
