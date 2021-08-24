@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css';
+import "./style.css";
 
 function ProductFilters() {
   return (
@@ -7,15 +7,15 @@ function ProductFilters() {
       <div className="filters-container">
         <div>6 products</div>
         <div>
-          <label htmlFor="order">Order</label>
-          <select id="order">
-            <option>Latest</option>
+          <label htmlFor="price">Price</label>
+          <select id="price">
+            <option>-</option>
             <option>Lowest</option>
             <option>Highest</option>
           </select>
         </div>
         <div>
-          <label htmlFor="filter">Filter</label>
+          <label htmlFor="filter">size</label>
           <select id="filter">
             <option>All</option>
             <option>XS</option>

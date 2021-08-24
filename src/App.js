@@ -8,9 +8,9 @@ import {productList} from "./data/data";
 function App() {
   const [FilteredProductList, setFilteredProductList] = useState(productList);
   const addProduct = () => {
-    console.log('hello world')
+
     const product = {
-      id: 6,
+      id: Date.now(),
       title: "Parastu",
       imgsrc:
         "https://react-shopping-cart-seven-lovat.vercel.app/images/dress6.jpg",
